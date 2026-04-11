@@ -10,19 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.DISPATCH_TOKEN }}
 
       - name: Fetch stats from mindlore repo
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
         run: |
-          # Get plugin.json for hook/skill counts
           PLUGIN=$(gh api repos/mindlore/mindlore/contents/plugin.json --jq '.content' | base64 -d)
           HOOKS=$(echo "$PLUGIN" | jq '.hooks | length')
           SKILLS=$(echo "$PLUGIN" | jq '.skills | length')
 
           echo "HOOKS=$HOOKS SKILLS=$SKILLS"
 
-          # Update profile/README.md
           sed -i "s/[0-9]* hooks/$HOOKS hooks/" profile/README.md
           sed -i "s/[0-9]* skills/$SKILLS skills/" profile/README.md
 
