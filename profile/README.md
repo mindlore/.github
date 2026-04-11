@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/mindlore-logo.png" alt="Mindlore" width="400">
+  <img src="https://raw.githubusercontent.com/mindlore/.github/main/assets/mindlore-logo.png" alt="Mindlore" width="320">
 </p>
 
 <p align="center">
