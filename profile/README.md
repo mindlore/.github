@@ -12,7 +12,7 @@ During Session → FTS5 search on every prompt (top 3 results)
 Session End    → structured delta (decisions, changes, open questions)
 ```
 
-Mindlore operates through Claude Code lifecycle hooks — invisible background scripts that fire as you work. No commands to run, no workflow changes.
+Mindlore operates through Claude Code lifecycle12 hooks — invisible background scripts that fire as you work. No commands to run, no workflow changes.
 
 ## Quick Start
 
@@ -28,6 +28,6 @@ npx mindlore init
 
 ## Stats
 
-- 9 hooks | 5 skills | 9-column FTS5 with porter stemmer
+- 12 hooks | 7 skills | 9-column FTS5 with porter stemmer
 - 3 OS x 2 Node CI matrix
 - Zero telemetry, zero external services
