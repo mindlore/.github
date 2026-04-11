@@ -1,18 +1,22 @@
-# Mindlore
+<p align="center">
+  <img src="assets/mindlore-logo.png" alt="Mindlore" width="400">
+</p>
 
-AI-native knowledge system for Claude Code.
+<p align="center">
+  AI-native knowledge system for Claude Code.
+</p>
 
 Knowledge persists across sessions. Search happens automatically. Knowledge compounds over time.
 
 ## How it works
 
 ```
-Session Start  → inject last delta + INDEX
-During Session → FTS5 search on every prompt (top 3 results)
-Session End    → structured delta (decisions, changes, open questions)
+Session Start  → inject last delta + INDEX + version check
+During Session → FTS5 layered search (project + global, top 3)
+Session End    → structured delta + global git sync
 ```
 
-Mindlore operates through Claude Code lifecycle12 hooks — invisible background scripts that fire as you work. No commands to run, no workflow changes.
+Mindlore operates through 12 Claude Code lifecycle hooks — invisible background scripts that fire as you work. No commands to run, no workflow changes.
 
 ## Quick Start
 
@@ -28,6 +32,6 @@ npx mindlore init
 
 ## Stats
 
-- 12 hooks | 7 skills | 9-column FTS5 with porter stemmer
+- 12 hooks | 7 skills | 10-column FTS5 with porter stemmer
 - 3 OS x 2 Node CI matrix
 - Zero telemetry, zero external services
