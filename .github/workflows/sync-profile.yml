@@ -23,8 +23,7 @@ jobs:
 
           echo "HOOKS=$HOOKS SKILLS=$SKILLS"
 
-          sed -i "s/[0-9]* hooks/$HOOKS hooks/" profile/README.md
-          sed -i "s/[0-9]* skills/$SKILLS skills/" profile/README.md
+          sed -i "s/[0-9]* hooks and [0-9]* skills/$HOOKS hooks and $SKILLS skills/" profile/README.md
 
       - name: Commit if changed
         run: |
