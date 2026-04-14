@@ -16,7 +16,7 @@ During Session → FTS5 layered search (project + global, top 3)
 Session End    → structured delta + global git sync
 ```
 
-Mindlore operates through 13 Claude Code lifecycle13 hooks — invisible background scripts that fire as you work. No commands to run, no workflow changes.
+Mindlore operates through 13 hooks and 7 skills — invisible background scripts that fire as you work. No commands to run, no workflow changes.
 
 ## Quick Start
 
@@ -28,10 +28,3 @@ npx mindlore init
 
 - [GitHub](https://github.com/mindlore/mindlore)
 - [npm](https://www.npmjs.com/package/mindlore)
-- [Changelog](https://github.com/mindlore/mindlore/blob/main/CHANGELOG.md)
-
-## Stats
-
-- 13 hooks | 7 skills | 10-column FTS5 with porter stemmer
-- 3 OS x 2 Node CI matrix
-- Zero telemetry, zero external services
