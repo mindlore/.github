@@ -16,7 +16,7 @@ During Session → FTS5 layered search (project + global, top 3)
 Session End    → structured delta + global git sync
 ```
 
-Mindlore operates through 14 hooks and 7 skills — invisible background scripts that fire as you work. No commands to run, no workflow changes.
+Mindlore operates through 14 hooks and 9 skills — invisible background scripts that fire as you work. No commands to run, no workflow changes.
 
 ## Quick Start
 
